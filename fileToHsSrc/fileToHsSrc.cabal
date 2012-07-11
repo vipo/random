@@ -1,0 +1,17 @@
+name:            fileToHsSrc
+version:         0.0.3.14
+cabal-version:   >= 1.2
+author:          Viaceslav Pozdniakov
+license:         PublicDomain
+category:        Utils
+synopsis:        Encodes any (i.e. binary) file into .hs file usable outside IO monad
+build-type:      Simple
+
+executable fileToHsSrc
+ hs-source-dirs: src
+ main-is:        FileToHsSrc.hs
+ build-depends:  base,
+                 filepath,
+                 base64-bytestring,
+                 bytestring
+
